@@ -1,0 +1,89 @@
+
+.header_left{
+display: flex;
+align-items:center;
+gap: 26px;
+}
+
+
+
+
+/* ----------------------- */
+
+/* Адаптация  */
+
+@media (max-width: 1200px) {
+
+}
+
+/* ----------------------- */
+@media (max-width: 1024px) {
+}
+
+/* ----------------------- */
+/* 950 px max-width */
+
+
+
+@media (max-width: 950px){
+  .header_left {
+    gap: 15px;
+  }
+}
+
+/* ----------------------- */
+/* 850px max-width */
+
+
+@media (max-width: 850px) {
+ 
+  .header_left{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+/* Шапка сайта */
+ 
+  .header_left {
+    gap: 14px;
+  }
+
+
+}
+
+/* ----------------------- */
+/* max-width  700px */
+@media (max-width: 700px) {
+
+
+}
+
+
+/* ----------------------- */
+
+/* 500 */
+
+@media (max-width: 500px) {
+
+  /* шапка */
+
+ 
+  .header_left {
+    gap: 10px;
+  }
+ 
+}
+
+
+
+/* ----------------------- */
+@media (max-width: 360px) {
+
+}

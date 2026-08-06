@@ -1,0 +1,133 @@
+
+/* -------------------- */
+/* Лого  и имя Сайта */
+
+
+.header_Logo{
+  width: 55px;
+  height: 55px;
+  border-radius: 13px;
+  background: #1c1c1e;
+  flex-shrink: 0;
+}
+
+.header_LogoPanel{
+display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header_LogoName{
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 18px;
+line-height: 150%;
+letter-spacing: -0.02em;
+color: #fff;
+}
+
+
+.header_LogoName.header_LogoNameSpan{
+  color: #3B82F6;
+}
+
+
+
+
+/* ----------------------- */
+
+/* Адаптация  */
+
+@media (max-width: 1200px) {
+
+}
+
+/* ----------------------- */
+@media (max-width: 1024px) {
+}
+
+/* ----------------------- */
+/* 950 px max-width */
+
+
+
+@media (max-width: 950px){
+  /* Логотип */
+  .header_Logo {
+    width: 45px;
+    height: 45px;
+  }
+
+
+  
+  .header_LogoName {
+    font-size: 16px;
+  }
+}
+
+/* ----------------------- */
+/* 850px max-width */
+
+
+@media (max-width: 850px) {
+ 
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+
+}
+
+/* ----------------------- */
+/* max-width  700px */
+@media (max-width: 700px) {
+/* ----------------------- */
+/* шапка  */
+
+.header_LogoName{
+  display:none
+}
+
+
+}
+
+
+/* ----------------------- */
+
+/* 500 */
+
+@media (max-width: 500px) {
+
+/* шапка */
+
+  .header_LogoName {
+    font-size: 15px;
+  }
+ 
+  .header_Logo {
+    width: 42px;
+    height: 42px;
+  }
+ 
+ 
+}
+
+
+
+/* ----------------------- */
+@media (max-width: 360px) {
+ 
+  .header_Logo {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+  }
+ 
+  .header_LogoName {
+    font-size: 13px;
+  }
+}

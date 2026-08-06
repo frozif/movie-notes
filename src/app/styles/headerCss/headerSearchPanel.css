@@ -1,0 +1,140 @@
+
+/* -------------------- */
+/* Панель Поиска шапки */
+
+.header_SearchPanel{
+  border: 1px solid #2a2a35;
+border-radius: 12px;
+width: 440px;
+height: 43px;
+    padding-right: 36px;
+background: #18181f;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+color: #4a4a5a;
+padding: 10px;
+}
+
+.search_Panel{
+position: relative;
+}
+
+
+
+.search_Panel button{
+  position: absolute;
+width: 20px;
+height: 20px;
+  top: 28%;
+  left: 94%;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+
+
+
+/* ----------------------- */
+
+/* Адаптация  */
+
+@media (max-width: 1200px) {
+.header_SearchPanel {
+    width: 320px;
+  }
+}
+
+/* ----------------------- */
+@media (max-width: 1024px) {
+.header_SearchPanel {
+    width: 240px;
+  }
+}
+
+/* ----------------------- */
+/* 950 px max-width */
+
+
+
+@media (max-width: 950px){
+
+  /* Поиск */
+  .header_SearchPanel {
+    width: 280px;
+    height: 40px;
+    font-size: 13px;
+  }
+
+  .search_Panel button {
+    left: 90%;
+  }
+}
+
+/* ----------------------- */
+/* 850px max-width */
+
+
+@media (max-width: 850px) {
+ 
+
+
+
+  .header_SearchPanel{
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .search_Panel{
+    flex: 1;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+
+
+  /* ----------------------- */
+  /* Поиск  */
+    .header_SearchPanel {
+    width: 100%;
+    box-sizing: border-box;
+  }
+ 
+  .search_Panel {
+    width: 100%;
+  }
+ 
+  .search_Panel button {
+    left: auto;
+    right: 10px;
+  }
+}
+
+/* ----------------------- */
+/* max-width  700px */
+@media (max-width: 700px) {
+
+
+}
+
+
+/* ----------------------- */
+
+/* 500 */
+
+@media (max-width: 500px) {
+
+
+ 
+}
+
+
+
+/* ----------------------- */
+@media (max-width: 360px) {
+
+}

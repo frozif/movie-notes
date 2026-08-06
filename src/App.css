@@ -1,0 +1,141 @@
+/* -------------------- */
+/* Основная часть Сайта */
+/* -------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+  --font-family: "Inter", sans-serif;
+}
+
+body{
+background: #0d0d0f;
+}
+
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+/* ----------------------- */
+
+/* Адаптация  */
+
+@media (max-width: 1200px) {
+
+ 
+}
+
+/* ----------------------- */
+@media (max-width: 1024px) {
+
+ 
+
+
+}
+
+
+
+/* ----------------------- */
+/* 950 px max-width */
+
+
+
+@media (max-width: 950px){
+
+
+
+
+}
+
+/* ----------------------- */
+/* 850px max-width */
+
+
+@media (max-width: 850px) {
+
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+
+/* ----------------------- */
+
+  /* -------------------- */
+  /* гид сетка карточки  */
+
+
+
+
+}
+
+/* ----------------------- */
+/* max-width  700px */
+@media (max-width: 700px) {
+
+
+}
+
+
+/* ----------------------- */
+
+/* 500 */
+
+@media (max-width: 500px) {
+
+
+
+
+
+
+
+
+}
+
+
+
+/* ----------------------- */
+@media (max-width: 360px) {
+ 
+
+
+
+
+}
+

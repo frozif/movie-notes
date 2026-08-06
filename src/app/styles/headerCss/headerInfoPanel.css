@@ -1,0 +1,143 @@
+
+
+/* -------------------- */
+
+/* Основные стили для  панели  количества фильмов  */
+
+.header_Collection{
+margin-top: 30px;
+}
+
+.header_Collection_Main{
+
+}
+
+/* -------------------- */
+
+/* Стили для  информационого текста    панели  количества фильмов  */
+
+.header_Collection_txt{
+
+}
+
+
+.header_Collection_txt h2{
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 12px;
+line-height: 150%;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+color: #4a4a5a;
+}
+
+
+.header_Collection_txt p{
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 28px;
+line-height: 150%;
+letter-spacing: -0.02em;
+color: #fff;
+}
+
+
+/* -------------------- */
+
+/* Стили для    текста    панели  количества фильмов  */
+
+
+.header_Collection_moviesCount{
+}
+
+
+.header_Collection_moviesCount span{
+}
+
+.header_Collection_moviesCount  p {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 13px;
+line-height: 150%;
+color: #4a4a5a;
+  display: flex;
+gap: 5px;
+}
+
+
+
+
+/* ------------------------- */
+
+
+
+
+/* ----------------------- */
+
+/* Адаптация  */
+
+@media (max-width: 1200px) {
+
+}
+
+/* ----------------------- */
+@media (max-width: 1024px) {
+
+}
+
+/* ----------------------- */
+/* 950 px max-width */
+
+
+
+@media (max-width: 950px){
+
+}
+
+/* ----------------------- */
+/* 850px max-width */
+
+
+@media (max-width: 850px) {
+
+}
+
+
+
+
+@media (max-width: 768px) {
+/* -------------------- */
+/* панель  */
+
+   .header_Collection_txt p {
+    font-size: 22px;
+  }
+}
+
+/* ----------------------- */
+/* max-width  700px */
+@media (max-width: 700px) {
+
+
+}
+
+
+/* ----------------------- */
+
+/* 500 */
+
+@media (max-width: 500px) {
+/* ----------------------- */
+/* заголовок */
+
+  .header_Collection_txt p {
+    font-size: 20px;
+  }
+}
+
+
+
+/* ----------------------- */
+@media (max-width: 360px) {
+
+}

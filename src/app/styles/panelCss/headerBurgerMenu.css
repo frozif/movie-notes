@@ -1,0 +1,165 @@
+
+
+/* ----------------------- */
+/* бургер меню скрытый */
+
+
+
+.burger_menu {
+  display: none;
+}
+
+.burger_menu_btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.burger_menu_btn img {
+  width: 24px;
+  height: 24px;
+}
+
+
+/* ----------------------- */
+/* бургер меню скрытый */
+/* .burger_menu {
+  display: none;
+}
+
+.burger_menu_btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.burger_menu_btn img {
+  width: 24px;
+  height: 24px;
+} */
+
+
+
+
+/* ------------------------- */
+
+
+
+
+
+
+
+
+/* ----------------------- */
+
+/* Адаптация  */
+
+@media (max-width: 1200px) {
+
+}
+
+/* ----------------------- */
+@media (max-width: 1024px) {
+
+}
+
+/* ----------------------- */
+/* 950 px max-width */
+
+
+
+@media (max-width: 950px){
+
+}
+
+/* ----------------------- */
+/* 850px max-width */
+
+
+@media (max-width: 850px) {
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+}
+
+/* ----------------------- */
+/* max-width  700px */
+@media (max-width: 700px) {
+
+
+}
+
+
+/* ----------------------- */
+
+/* 500 */
+
+@media (max-width: 500px) {
+
+
+/* ----------------------- */
+/* панель с действиями из шапки */
+.burger_menu {
+  display: flex;
+}
+
+
+.burger_btn {
+  color: #A0A0B0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 44px;
+  height: 44px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger_bar {
+  display: block;
+  width: 28px;
+  height: 2.5px;
+  background: currentColor;
+  border-radius: 2px;
+  position: absolute;
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1),
+              opacity   0.3s ease,
+              top       0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.burger_bar_top { top: 12px; }
+.burger_bar_mid { top: 50%; transform: translateY(-50%); }
+.burger_bar_bot { bottom: 12px; }
+
+.burger_btn.active .burger_bar_top {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+.burger_btn.active .burger_bar_mid {
+  opacity: 0;
+  transform: translateY(-50%) scaleX(0);
+}
+.burger_btn.active .burger_bar_bot {
+  bottom: auto;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+ 
+}
+
+
+
+/* ----------------------- */
+@media (max-width: 360px) {
+
+}

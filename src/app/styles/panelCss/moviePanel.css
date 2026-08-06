@@ -1,0 +1,716 @@
+
+/* -------------------- */
+
+/*  Основная   Панель для добавления карточки с фильом  */
+
+.addFilm_Panel{
+  display: flex;
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: center;
+    position: fixed;
+  top: 0;
+  right: 0;
+  background: #18181F;
+        width: 600px;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 30px 24px;
+  z-index: 1000;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.35s ease;
+}
+
+.addFilm_Panel.open {
+    transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay {
+    position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+
+/* -------------------- */
+
+
+ /* Панель для добавления карточки с фильом  */
+
+.addFilm_Panel_X{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+
+.addFilm_Panel_X h4{
+  font-family: var(--font-family);
+font-weight: 600;
+font-size: 11px;
+line-height: 150%;
+letter-spacing: 0.09em;
+text-transform: uppercase;
+color: #4a4a5a;
+}
+
+.addFilm_Panel_X p{
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 20px;
+line-height: 150%;
+letter-spacing: -0.02em;
+color: #fff;
+}
+
+
+.addFilm_btn_X{
+width: 32px;
+height: 32px;
+background: #1E1E2E;
+border-radius: 10px;
+border:none;
+display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addFilm_Panel_X img{
+height: 14px;
+width: 14px;
+}
+
+
+.addFilm_Panel_Info{
+  margin-top: 45px;
+display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.addFilm_Panel_PersonalNotes{
+  margin-top: 70px;
+}
+
+
+
+
+.addFilm_Panel_Title label {
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 12px;
+line-height: 133%;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #a0a0b0;
+}
+
+.addFilm_Panel_Title input{
+  border: 1px solid #2a2a35;
+border-radius: 12px;
+width: 100%;
+height: 46px;
+  background: #18181f;
+  padding: 0 14px;  
+color: #2a2a35;
+  color: #fff;
+}
+
+.addFilm_Panel_Meta{
+display: flex;
+gap: 15px;
+}
+
+.addFilm_Panel_Meta label{
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 12px;
+line-height: 133%;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #a0a0b0;
+}
+
+.addFilm_Panel_Meta input{
+border: 1px solid #2a2a35;
+padding: 0 14px;
+border-radius: 12px;
+width: 462px;
+height: 46px;
+background: #18181f;
+width: 223px;
+  color: #fff;
+height: 46px;
+}
+
+
+.addFilm_Panel_PersonalNotes,
+.addFilm_Panel_Title,
+.addFilm_Panel_Genre,
+.addFilm_Panel_Year{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.addFilm_Panel input[type="number"] {
+  appearance: textfield;
+}
+
+.addFilm_Panel input[type="number"]::-webkit-outer-spin-button,
+.addFilm_Panel input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.addFilm_Panel_PersonalNotes{
+  
+}
+
+.addFilm_Panel_PersonalNotes label{
+  font-family: var(--font-family);
+  padding: 0 14px;
+font-weight: 600;
+font-size: 12px;
+line-height: 133%;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #a0a0b0;
+}
+
+
+
+.addFilm_Panel_PersonalNotes textarea{
+  padding: 3px 10px;
+border: 1px solid #2a2a35;
+border-radius: 12px;
+ width: 100%;
+  resize: none;
+height: 117px;
+  color: #fff;
+background: #18181f;
+}
+
+
+
+.addFilm_Panel input::placeholder,
+.addFilm_Panel textarea::placeholder {
+  color: #6c6c80;
+}
+.addFilm_Panel_PosterURL input:focus,
+.addFilm_Panel input:focus,
+.addFilm_Panel textarea:focus {
+  outline: none;
+border-color: #3a3a55;
+}
+
+
+.addFilm_Panel_PosterURL{
+display: flex;
+flex-direction: column;
+gap: 6px;
+}
+
+.addFilm_Panel_PosterURL label{
+  font-family: var(--font-family);
+font-weight: 600;
+font-size: 12px;
+line-height: 133%;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #a0a0b0;
+}
+
+
+.addFilm_Panel_PosterURL input{
+border: 1px solid #2a2a35;
+padding: 0 14px;
+border-radius: 12px;
+border: 1px solid #2a2a35;
+width: 100%;
+height: 46px;
+background: #18181f;
+  color: #fff;
+}
+
+
+/* ----------------------- */
+/* Панель с звездами */
+
+.addFilm_Panel_Rating{
+font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 133%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #a0a0b0;
+}
+
+.rating_star {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.rating_star:hover {
+  transform: scale(1.2);
+}
+
+.rating_star {
+  width: 15px;
+  height: 15px;
+}
+/* ----------------------- */
+/* Панель для Постера*/
+
+.addFilm_Poster_Panel {
+  background: #111214;
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 14px 16px 18px;
+  font-family: sans-serif;
+  color: #fff;
+  max-width: 500px;
+}
+
+.addFilm_Poster_Panel_header {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.addFilm_Poster_Panel_header_icon {
+  font-size: 13px;
+}
+
+.addFilm_Poster_Panel_header_main{
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.addFilm_Poster_Panel_header_preview {
+  width: 72px;
+  display: flex;
+  height: 80px;
+  border-radius: 8px;
+  border: 0.5px solid rgba(255, 255, 255, 0.12);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.addFilm_Poster_Panel_header_preview img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.addFilm_Poster_Panel_header_preview.hide{
+  display: none;
+}
+
+.addFilm_Poster_Panel_header_preview.show{
+  display: flex;
+}
+
+
+.addFilm_Poster_Panel_header_preview_inner {
+  width: 100%;
+  height: 100%;
+  background: #1e2027;
+}
+
+
+
+.addFilm_Poster_Panel_header_right {
+  flex: 1;
+}
+
+.addFilm_Poster_Panel_right_note {
+  color: rgba(255, 255, 255, 0.22);
+  font-size: 13px;
+  margin-bottom: 14px;
+  min-height: 18px;
+}
+
+.addFilm_Poster_Panel_right_options {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.addFilm_PosterUrl_Panel_right_btn,
+.addFilm_Poster_Panel_right_btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 7px;
+  border: 0.5px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.addFilm_PosterUrl_Panel_right_btn:hover,
+.addFilm_Poster_Panel_right_btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+.addFilm_PosterUrl_Panel_right_btn.active{
+    background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+
+.addFilm_Poster_Panel_right_btn.active {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+
+.addFilm_Poster_Panel_right_swatches {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.swatch {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.15s, transform 0.1s;
+  flex-shrink: 0;
+}
+
+.swatch:hover {
+  transform: scale(1.12);
+}
+
+.swatch.active {
+  border-color: #fff;
+}
+
+
+
+.addFilm_Poster_Panel_upload_area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 0.5px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 12px;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.addFilm_Poster_Panel_upload_area:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.addFilm_Poster_Panel_upload_icon {
+  font-size: 16px;
+}
+
+.addFilm_Poster_Panel_upload_input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+.addFilmUrl_Poster_Panel_upload_input{
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+        position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 0.5px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 12px;
+    color: black;
+      padding: 4px 12px;
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s;
+}
+
+.addFilm_Panel_btns{
+display: flex;
+gap: 20px;
+    justify-content: space-between;
+      padding-bottom: 30px; 
+}
+
+
+.addFilm_Panel_Addbtn{
+border-radius: 12px;
+width: 323px;
+height: 46px;
+box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0), 0 2px 16px 0 rgba(229, 9, 20, 0.25);
+background: #3B82F6;
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 14px;
+line-height: 150%;
+text-align: center;
+border: none;
+color: #fff;
+display: flex;
+    align-items: center;
+    gap: 7px;
+    justify-content: center;
+}
+
+.addFilm_Panel_Addbtn span {
+color: #fff;
+font-size: 20px;
+}
+
+.addFilm_Panel_CancelBtn{
+  border: 1px solid #2a2a35;
+border-radius: 12px;
+display: flex;
+    align-items: center;
+    justify-content: center;
+width: 96px;
+height: 46px;
+background: #18181f;
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 14px;
+line-height: 150%;
+text-align: center;
+color: #a0a0b0;
+}
+
+
+
+/* ------------------------- */
+
+
+
+
+/* ----------------------- */
+
+/* Адаптация  */
+
+@media (max-width: 1200px) {
+
+}
+
+/* ----------------------- */
+@media (max-width: 1024px) {
+
+  .addFilm_Panel {
+    width: 520px;
+  }
+ 
+}
+
+/* ----------------------- */
+/* 950 px max-width */
+
+
+
+@media (max-width: 950px){
+
+}
+
+/* ----------------------- */
+/* 850px max-width */
+
+
+@media (max-width: 850px) {
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+
+/* -------------------- */
+/* панель  */
+
+
+
+/* информация панели */
+.addFilm_Panel_Info{
+gap: 10px;
+}
+
+.addFilm_Panel_PersonalNotes{
+  margin-top: 30px
+}
+
+
+
+/* -------------------- */
+/* панель добавления фильма  */
+
+ .addFilm_Panel {
+    width: 100%;
+    padding: 24px 16px;
+  }
+ 
+  .addFilm_Panel_Meta {
+    flex-direction: column;
+    gap: 10px;
+  }
+ 
+  .addFilm_Panel_Meta input {
+    width: 100%;
+  }
+ 
+  .addFilm_Panel_btns {
+    flex-direction: column-reverse;
+    gap: 12px;
+  }
+ 
+  .addFilm_Panel_Addbtn {
+    width: 100%;
+  }
+ 
+  .addFilm_Panel_CancelBtn {
+    width: 100%;
+  }
+ 
+
+
+}
+
+/* ----------------------- */
+/* max-width  700px */
+@media (max-width: 700px) {
+
+
+}
+
+
+/* ----------------------- */
+
+/* 500 */
+
+@media (max-width: 500px) {
+
+
+/* ----------------------- */
+/* Панель добавления */
+
+
+  .addFilm_Panel {
+    padding: 20px 12px;
+  }
+ 
+  .addFilm_Panel_Info {
+    gap: 10px;
+  }
+ 
+  .addFilm_Panel_PersonalNotes {
+    margin-top: 24px;
+  }
+ 
+/* панель постера */
+
+  .addFilm_Poster_Panel_header_main {
+    flex-direction: column;
+  }
+ 
+  .addFilm_Poster_Panel_header_preview {
+    width: 100%;
+    height: 120px;
+  }
+
+  .addFilm_Poster_Panel_header_main {
+    flex-direction: column;
+  }
+ 
+  .addFilm_Poster_Panel_header_preview {
+    width: 100%;
+    height: 120px;
+  }
+ 
+
+
+  
+/* ----------------------- */
+/* панель для добавления фильма  */
+
+  .addFilm_Panel_btns {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .addFilm_Panel_Addbtn {
+    width: 100%;
+  }
+
+  .addFilm_Panel_CancelBtn {
+    width: 100%;
+  }
+
+  .addFilm_Panel_Meta {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .addFilm_Panel_Meta input {
+    width: 100%;
+  }
+
+  .addFilm_Poster_Panel {
+    max-width: 100%;
+  }
+.addFilm_Panel_Meta input,
+  .addFilm_Panel input[type="number"],
+    .addFilm_Panel_Title input,
+  .addFilm_Panel_PosterURL input,
+  .addFilm_Panel_PersonalNotes textarea {
+    font-size: 11px;
+    height: 30px;
+  }
+
+  .addFilm_Panel_PersonalNotes textarea {
+    height: 80px;
+  }
+
+  .addFilm_Panel_X p {
+    font-size: 12px;
+  }
+
+  .addFilm_Panel_Addbtn {
+    font-size: 13px;
+    height: 32px;
+  }
+  
+}
+
+
+
+/* ----------------------- */
+@media (max-width: 360px) {
+
+}

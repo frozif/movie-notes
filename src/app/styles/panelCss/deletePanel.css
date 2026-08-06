@@ -1,0 +1,199 @@
+
+/* -------------------- */
+
+/* Основные параметры для панели удаления карточки */
+
+.deleteFilm_Panel{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 384px;
+  height: 260px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  background: #13131a;
+  border: 1px solid #2a2a35;
+  border-radius: 16px;
+    opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+
+.deleteFilm_Panel.delete {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+
+}
+/* -------------------- */
+
+/* вверхняя часть параметров для панели удаления карточки  */
+
+.deleteFilm_Panel_Up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.deleteFilm_Panel_Up img {
+
+}
+
+.deleteFilm_Panel_Up h3{
+  margin-top: 15px;
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 18px;
+line-height: 156%;
+text-align: center;
+color: #fff;
+}
+
+.deleteFilm_Panel_Up p{
+  margin-top: 10px;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 143%;
+max-width: 320px;
+text-align: center;
+color: #4a4a5a;
+}
+
+/* -------------------- */
+
+/* Нижняя часть параметров для панели удаления карточки  */
+
+.deleteFilm_Panel_down{
+display: flex;
+gap: 12px;
+}
+
+.deleteFilm_Panel_CanelBtn{
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 14px;
+line-height: 143%;
+text-align: center;
+color: #a0a0b0;
+border: 1px solid #2a2a35;
+border-radius: 12px;
+width: 162px;
+height: 46px;
+background: #1e1e2e;
+}
+
+.deleteFilm_Panel_DeleteBtn{
+  border-radius: 12px;
+  background: #f87171;
+width: 160px;
+height: 46px;
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 14px;
+border: none;
+line-height: 143%;
+text-align: center;
+color: #fff;
+}
+
+
+
+/* ------------------------- */
+
+
+
+
+/* ----------------------- */
+
+/* Адаптация  */
+
+@media (max-width: 1200px) {
+
+}
+
+/* ----------------------- */
+@media (max-width: 1024px) {
+
+}
+
+/* ----------------------- */
+/* 950 px max-width */
+
+
+
+@media (max-width: 950px){
+
+}
+
+/* ----------------------- */
+/* 850px max-width */
+
+
+@media (max-width: 850px) {
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+
+/* ----------------------- */
+/* панель удаления фильма  */
+.deleteFilm_Panel {
+    width: calc(100% - 32px);
+    max-width: 384px;
+    height: auto;
+    padding: 24px 20px;
+    gap: 20px;
+  }
+ 
+  .deleteFilm_Panel_down {
+    flex-direction: column;
+    width: 100%;
+  }
+ 
+  .deleteFilm_Panel_CanelBtn,
+  .deleteFilm_Panel_DeleteBtn {
+    width: 100%;
+  }
+
+
+}
+
+/* ----------------------- */
+/* max-width  700px */
+@media (max-width: 700px) {
+
+
+}
+
+
+/* ----------------------- */
+
+/* 500 */
+
+@media (max-width: 500px) {
+
+}
+
+
+
+/* ----------------------- */
+@media (max-width: 360px) {
+ 
+  .deleteFilm_Panel_Up h3 {
+    font-size: 16px;
+  }
+}

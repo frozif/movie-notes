@@ -1,0 +1,110 @@
+/* -------------------- */
+/* Основная часть шапки */
+.header_Main{
+  border-bottom: 1px solid #1e1e24;
+height: 66px;
+box-shadow: 0 1px 40px 0 rgba(0, 0, 0, 0.6);
+background: #0d0d0f;
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container.header_MainContainer{
+  display: flex;
+  align-items:center;
+      justify-content: space-between;
+}
+
+
+
+/* ----------------------- */
+
+/* Адаптация  */
+
+@media (max-width: 1200px) {
+
+}
+
+/* ----------------------- */
+@media (max-width: 1024px) {
+}
+
+/* ----------------------- */
+/* 950 px max-width */
+
+
+
+@media (max-width: 950px){
+
+  .header_Main {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .container.header_MainContainer {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+}
+
+/* ----------------------- */
+/* 850px max-width */
+
+
+@media (max-width: 850px) {
+    .container.header_MainContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px 0;
+  }
+
+
+}
+
+
+
+
+@media (max-width: 768px) {
+/* Шапка сайта */
+
+.header_Main {
+    height: auto;
+    padding: 10px 0;
+  }
+ 
+  .container.header_MainContainer {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+}
+
+/* ----------------------- */
+/* max-width  700px */
+@media (max-width: 700px) {
+
+
+}
+
+
+/* ----------------------- */
+
+/* 500 */
+
+@media (max-width: 500px) {
+
+  .container.header_MainContainer{
+    padding: 15px 10px;
+  }
+ 
+}
+
+
+
+/* ----------------------- */
+@media (max-width: 360px) {
+
+}

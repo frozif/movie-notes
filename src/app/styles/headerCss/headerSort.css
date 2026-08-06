@@ -1,0 +1,150 @@
+
+/* -------------------- */
+
+/* дата добавления в шапке */
+
+.header_Sort{
+    display: flex;
+    justify-content: center;
+        border: 1px solid #2a2a35;
+    border-radius: 12px;
+    width: 119px;
+    background: #18181f;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.header_SortPanel{
+fill: rgba(160, 160, 176, 0.8);
+stroke-width: 1px;
+stroke: #000;
+    font-family: var(--font-family);
+font-weight: 400;
+color: #a0a0b0;
+    padding: 8px 6px;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+        border: 1px solid #2a2a35;
+    border-radius: 12px;
+    width: 119px;
+    background: #18181f;
+    height: 36px;
+    display: flex;
+    justify-content: center;  
+}
+
+.header_SortPanel:hover {
+  border-color: #3a3a40;
+  background: #18181b;
+}
+
+.header_SortPanel:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.25);
+}
+
+.header_SortPanelOption{
+    background: #18181f;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.header_SortPanelOption:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.header_SortPanelOption {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+
+/* ------------------------- */
+
+
+
+
+/* ----------------------- */
+
+/* Адаптация  */
+
+@media (max-width: 1200px) {
+
+}
+
+/* ----------------------- */
+@media (max-width: 1024px) {
+
+}
+
+/* ----------------------- */
+/* 950 px max-width */
+
+
+
+@media (max-width: 950px){
+  /* Сортировка */
+  .header_Sort,
+  .header_SortPanel {
+    width: 100px;
+    font-size: 13px;
+  }
+}
+
+/* ----------------------- */
+/* 850px max-width */
+
+
+@media (max-width: 850px) {
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+
+    /* Сортировка  */
+  .header_SortPanel,
+  .header_Sort {
+    width: 100px;
+    font-size: 13px;
+  }
+}
+
+/* ----------------------- */
+/* max-width  700px */
+@media (max-width: 700px) {
+
+
+}
+
+
+/* ----------------------- */
+
+/* 500 */
+
+@media (max-width: 500px) {
+  /* ----------------------- */
+  /* Скрываем сортировку и избранное и  оставляем только кнопки действий */
+
+   .header_Sort,
+  .header_SortPanel {
+    display: none;
+  }
+}
+
+
+
+/* ----------------------- */
+@media (max-width: 360px) {
+
+}

@@ -1,0 +1,205 @@
+
+
+/* -------------------- */
+
+/* Кнопка выбора раскладки в шапке */
+
+
+.header_TypeSwitcher{
+  border: 1px solid #2a2a35;
+border-radius: 12px;
+width: 70px;
+height: 38px;
+background: #18181f;
+display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+}
+
+.switcherType{
+  border: none;
+  width: 11px;
+  height: 11px;
+    background: transparent;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+      cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+
+
+.switcherType.active {
+  background: #2a2a35;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 28px;
+  height: 28px;
+}
+
+
+
+
+.switcherType.active {
+  background: #2a2a35;
+  transform: scale(1.05);
+}
+
+/* -------------------- */
+
+/* Кнопка Добавления  AddMovie в шапке */
+
+
+.switcherType_AddPlus{
+border-radius: 12px;
+width: 128px;
+height: 41px;
+box-shadow: 0 2px 10px 0 rgba(229, 9, 20, 0.2);
+background: #3B82F6;
+border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.switcherType_AddPlus span{
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 14px;
+line-height: 150%;
+text-align: center;
+color: #fff;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------- */
+
+
+
+
+/* ----------------------- */
+
+/* Адаптация  */
+
+@media (max-width: 1200px) {
+
+}
+
+/* ----------------------- */
+@media (max-width: 1024px) {
+
+}
+
+/* ----------------------- */
+/* 950 px max-width */
+
+
+
+@media (max-width: 950px){
+
+
+  /* Переключатель вида */
+  .header_TypeSwitcher {
+    width: 60px;
+    height: 36px;
+    gap: 8px;
+  }
+
+  .switcherType.active {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Кнопка Add Movie */
+  .switcherType_AddPlus {
+    width: 110px;
+    height: 38px;
+  }
+
+  .switcherType_AddPlus span {
+    font-size: 13px;
+  }
+
+
+}
+
+/* ----------------------- */
+/* 850px max-width */
+
+
+@media (max-width: 850px) {
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+
+    /*  переключатель */
+
+ 
+  .switcherType_AddPlus {
+    width: 110px;
+    font-size: 13px;
+  }
+
+}
+
+/* ----------------------- */
+/* max-width  700px */
+@media (max-width: 700px) {
+
+
+}
+
+
+/* ----------------------- */
+
+/* 500 */
+
+@media (max-width: 500px) {
+
+/* ----------------------- */
+/* переключатель */
+  .header_TypeSwitcher {
+    width: 56px;
+    height: 34px;
+  }
+
+
+/* кнопка добавления карточки */
+  .switcherType_AddPlus {
+    width: 100%;
+    height: 38px;
+    border-radius: 10px;
+  }
+ 
+  .switcherType_AddPlus span {
+    display: none;
+  }
+}
+
+
+
+/* ----------------------- */
+@media (max-width: 360px) {
+
+  .switcherType_list{
+    display: none;
+  }
+}

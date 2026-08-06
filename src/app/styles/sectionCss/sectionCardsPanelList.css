@@ -1,0 +1,215 @@
+
+
+/* ----------------------- */
+/* стили для грид сетки */
+
+
+
+.card.list {
+  width: 100%;
+  height: 220px;
+
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 24px;
+
+  padding: 20px;
+  border-radius: 16px;
+}
+
+
+
+.card.list .card_FilmCategory {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(6px);
+
+  width: fit-content;
+}
+
+.card.list .card_FilmRating {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.card.list .rating {
+  font-weight: bold;
+  color: #ffd54a;
+}
+
+.card.list .card_controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.card.list .card_controls button {
+  width: 34px;
+  height: 34px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: rgba(255,255,255,0.08);
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.card.list .card_controls button:hover {
+  background: rgba(255,255,255,0.18);
+  transform: scale(1.05);
+}
+
+.card.list .card_down {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-right: 10px;
+}
+
+.card.list .card_down_filmName {
+  font-size: 18px;
+  font-weight: 600;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card.list .card_down_filmDate {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.card.list .card_down_filmDate_ratingTable {
+  display: flex;
+  gap: 4px;
+}
+
+.card.list .card_down_Description {
+  font-size: 13px;
+  opacity: 0.8;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+}
+
+.card.list .card_up {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card.list .card_down {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-right: 10px;
+    justify-content: space-between;
+}
+
+
+
+/* ------------------------- */
+
+
+
+
+/* ----------------------- */
+
+/* Адаптация  */
+
+@media (max-width: 1200px) {
+
+}
+
+/* ----------------------- */
+@media (max-width: 1024px) {
+
+}
+
+/* ----------------------- */
+/* 950 px max-width */
+
+
+
+@media (max-width: 950px){
+
+}
+
+/* ----------------------- */
+/* 850px max-width */
+
+
+@media (max-width: 850px) {
+
+}
+
+
+
+
+@media (max-width: 768px) {
+/* -------------- */
+/* тип сетки: лист */
+
+  .card.list {
+    grid-template-columns: 160px 1fr;
+    height: auto;
+    min-height: 160px;
+  }
+
+}
+
+/* ----------------------- */
+/* max-width  700px */
+@media (max-width: 700px) {
+
+
+}
+
+
+/* ----------------------- */
+
+/* 500 */
+
+@media (max-width: 500px) {
+
+
+/*  вид сетки */
+
+.card.list {
+    grid-template-columns: 120px 1fr;
+    gap: 14px;
+    padding: 14px;
+    min-height: 140px;
+    height: auto;
+  }
+ 
+  .card.list .card_down_filmName {
+    font-size: 15px;
+  }
+ 
+  .card.list .card_down_Description {
+    -webkit-line-clamp: 2;
+  }
+
+
+}
+
+
+
+/* ----------------------- */
+@media (max-width: 360px) {
+ .card.list {
+    grid-template-columns: 100px 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+}

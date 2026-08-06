@@ -1,0 +1,136 @@
+
+/* -------------------- */
+
+/* Панель Favorites шапки */
+
+.header_Favorites{
+  border: 1px solid #2a2a35;
+border-radius: 12px;
+width: 103px;
+height: 38px;
+background: #18181f;
+    padding: 8px 10px;
+    display: flex;
+        gap: 6px;
+    align-items:center;
+}
+
+.header_Favorites span{
+  font-family: var(--font-family);
+font-weight: 500;
+font-size: 13px;
+line-height: 150%;
+text-align: center;
+color: #a0a0b0;
+}
+
+.header_Favorites_Btn{
+  border: none;
+  display: flex;
+    align-items: center;
+    background: transparent;
+}
+
+
+
+
+
+
+
+
+/* ----------------------- */
+
+/* Адаптация  */
+
+@media (max-width: 1200px) {
+
+}
+
+/* ----------------------- */
+@media (max-width: 1024px) {
+}
+
+/* ----------------------- */
+/* 950 px max-width */
+
+
+
+@media (max-width: 950px){
+
+  /* Favorites */
+  .header_Favorites {
+    width: 90px;
+    height: 36px;
+  }
+
+  .header_Favorites span {
+    font-size: 12px;
+  }
+}
+
+/* ----------------------- */
+/* 850px max-width */
+
+
+@media (max-width: 850px) {
+ 
+}
+
+
+
+
+@media (max-width: 768px) {
+/* Шапка сайта */
+
+
+
+}
+
+/* ----------------------- */
+/* max-width  700px */
+@media (max-width: 700px) {
+
+
+}
+
+
+/* ----------------------- */
+
+/* 500 */
+
+@media (max-width: 500px) {
+/* шапка */
+
+  /* ----------------------- */
+  /* Скрываем сортировку и избранное и  оставляем только кнопки действий */
+
+  .header_Favorites {
+    width: 38px;
+    padding: 6px;
+  }
+ 
+  .header_Favorites span {
+    display: none;
+  }
+  
+/* ----------------------- */
+
+
+/* ----------------------- */
+/* панель с действиями из шапки */
+
+.header_Favorites{
+  display: flex;
+  justify-content: center;
+}
+
+  
+}
+
+
+
+/* ----------------------- */
+@media (max-width: 360px) {
+
+}
+
