@@ -5,13 +5,11 @@
 
 .header_Sort{
     display: flex;
-    justify-content: center;
         border: 1px solid #2a2a35;
     border-radius: 12px;
     width: 119px;
     background: #18181f;
     height: 36px;
-    display: flex;
     justify-content: center;
 }
 
@@ -19,9 +17,6 @@
 
 
 .header_SortPanel{
-fill: rgba(160, 160, 176, 0.8);
-stroke-width: 1px;
-stroke: #000;
     font-family: var(--font-family);
 font-weight: 400;
 color: #a0a0b0;
@@ -35,8 +30,6 @@ color: #a0a0b0;
     width: 119px;
     background: #18181f;
     height: 36px;
-    display: flex;
-    justify-content: center;  
 }
 
 .header_SortPanel:hover {
@@ -112,12 +105,7 @@ color: #a0a0b0;
 @media (max-width: 768px) {
 
 
-    /* Сортировка  */
-  .header_SortPanel,
-  .header_Sort {
-    width: 100px;
-    font-size: 13px;
-  }
+
 }
 
 /* ----------------------- */

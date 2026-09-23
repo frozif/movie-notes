@@ -10,8 +10,9 @@ display: flex;
   justify-content: space-between;
   border: 1px solid #1e1e24;
 border-radius: 16px;
-width: 283px;
+width: 100%;
 height: 500px;
+max-width: 283px;
 box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.4);
 background: #13131a;
 }
@@ -34,8 +35,8 @@ background: #13131a;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-      height: 100%;
-        margin: 10px 15px;
+  flex: 1;
+  padding: 10px 15px;
 }
 
 .card_up_Up{
@@ -49,7 +50,6 @@ font-weight: 600;
 font-size: 10px;
 color: #a0a0b0;
 border: 1px solid rgba(42, 42, 53, 0.8);
-max-width: 30px;
 height: 18px;
 backdrop-filter: blur(8px);
   display: flex;
@@ -146,8 +146,10 @@ background: rgba(13, 13, 15, 0.85);
 /* Нижняя основная часть карточки фильма */
 
 .card_down{
-background-color: #1E1E24;
-padding: 7px;
+  background-color: #1E1E24;
+  padding: 7px 10px;
+  border-radius: 0 0 15px 15px;
+  flex-shrink: 0;
 }
 
 
@@ -173,10 +175,7 @@ color: #fff;
     width: 100%;
 }
 
-.card_down_filmName:hover {
-  -webkit-line-clamp: unset;
-  overflow: hidden;
-}
+
 
 .card_down_filmDate{
   font-family: var(--font-family);
@@ -259,8 +258,9 @@ margin-top: 9px;
 @media (max-width: 768px) {
  
   .card {
+    max-width: none;
     width: 100%;
-    height: auto;
+    height: 380px;
     min-height: 440px;
   }
 

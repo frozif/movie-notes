@@ -1,4 +1,40 @@
 {
-  "movie": [],
+  "movie": [
+    {
+      "movieTitle": "sqsqsqsqsqsqsqsqsqwdqwdwdqwdqwdqwdqwdqwdqwdqwdqwdqwdqwd",
+      "year": "",
+      "genre": "",
+      "personalNotes": "",
+      "poster": "",
+      "rating": 0,
+      "color": "",
+      "dateAdded": "23.09.2026",
+      "imgUrl": "",
+      "id": "UKP1bum776I"
+    },
+    {
+      "movieTitle": "ыы",
+      "year": "2",
+      "genre": "",
+      "personalNotes": "d",
+      "poster": "",
+      "rating": 0,
+      "color": "",
+      "dateAdded": "23.09.2026",
+      "id": "qkpM0EZsJm8"
+    },
+    {
+      "movieTitle": "wqdqwdqwdqwd",
+      "year": "1212",
+      "genre": "1212",
+      "personalNotes": "wqwdqwdqwdqw",
+      "poster": "",
+      "rating": 0,
+      "color": "",
+      "dateAdded": "23.09.2026",
+      "imgUrl": "",
+      "id": "L_UiLngEC8Q"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

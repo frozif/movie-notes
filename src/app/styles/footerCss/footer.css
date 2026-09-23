@@ -9,11 +9,7 @@
     height: 66px;
     box-shadow: 0 1px 40px 0 rgba(0, 0, 0, 0.6);
     background: #0d0d0f;
-      position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
-      position: fixed;
 }
 
 
@@ -77,7 +73,7 @@
 
   /* Футер */
   .footer_main {
-    height: auto;
+   height: 56px;
     padding: 10px 0;
   }
 
